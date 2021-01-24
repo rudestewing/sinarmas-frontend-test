@@ -10,7 +10,8 @@ const Provider = (props) => {
   const [initialized, setInitialized] = useState(false)
 
   useEffect(() => {
-    setFavourites(localStorageData.get(localStorageKey) || [])
+    const _favourites = localStorageData.get(localStorageKey)
+    setFavourites(_favourites)
     setInitialized(true)
   }, [])
 
