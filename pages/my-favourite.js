@@ -32,7 +32,7 @@ const PageComponent = () => {
   useEffect(() => {
     if(favourites.length > 0)
       loadMovies()
-  }, [favourites])
+  }, [])
 
   return (
     <Fragment>
