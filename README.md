@@ -1,6 +1,6 @@
 # Sinarmas Frontend Test
 
-[View in Vercel](https://sinarmas-frontend-test.vercel.app/).
+[Demo: https://sinarmas-frontend-test.vercel.app](https://sinarmas-frontend-test.vercel.app/).
 
 ### cara menjalankan
 
