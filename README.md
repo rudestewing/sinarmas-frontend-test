@@ -1,5 +1,7 @@
 # Sinarmas Frontend Test
 
+[View in Vercel](https://sinarmas-frontend-test.vercel.app/).
+
 ### cara menjalankan
 
 1. Copy file **.env.local.example** ke dalam posisi direktori yang sama menjadi **.env.local**
