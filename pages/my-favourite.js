@@ -7,6 +7,7 @@ import {transformMovieDetail} from '../utils/transformers'
 const PageComponent = () => {
   const {favourites} = useContext(FavouritesContext.Context)
   const [movies, setMovies] = useState([])
+  const [initialized, setInitialized] = useState(false)
 
   async function getMovieData(favouriteId) {
     try {
@@ -30,9 +31,13 @@ const PageComponent = () => {
   }
 
   useEffect(() => {
-    if(favourites.length > 0)
-      loadMovies()
-  }, [])
+    if(!initialized) {
+      if(favourites.length > 0) {
+        loadMovies()
+        setInitialized(true)
+      }
+    }
+  }, [favourites])
 
   return (
     <Fragment>
